@@ -41,11 +41,10 @@ insert into money_tbl_02 values(100004, 20160008, 300, 1, 300, 'A005', '20160104
 insert into money_tbl_02 values(100004, 20160009, 600, 1, 600, 'A006', '20160104');
 insert into money_tbl_02 values(100004, 20160010, 3000, 1, 3000, 'A007', '20160106');
 
-create sequence member_seq (
+create sequence member_seq 
 	start with 100001
 	minvalue 100001
 	increment by 1
-	nocycle
-);
+	nocycle;
 
 grant alert, select on member_seq to system;
